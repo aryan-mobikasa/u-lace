@@ -152,3 +152,8 @@ img { max-width: 100%; }
 /* ticker never scrolls the page */
 body > div > div[style*="height: 56px"] { width: 100%; min-width: 0; box-sizing: border-box; }
 body > div > div[style*="height: 56px"] > div { flex-shrink: 0; }
+
+/* hero: let content set the height on tablet and phone */
+@media (max-width: 1024px) {
+  #top:not(.pdp) { aspect-ratio: auto !important; }
+}
