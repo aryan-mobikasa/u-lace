@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>uLace Classic — Black | No-tie sneaker laces</title>
+<meta name="description" content="uLace product page redesign — CRO revamp concept by Mobikasa">
+<link rel="icon" href="assets/ulace-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@700;800&family=Jost:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#030303;text-decoration:none}a:hover{color:#1094F5}
+.display{font-family:'Archivo Black','Eveleth Clean',Impact,sans-serif;text-transform:uppercase;line-height:.95;letter-spacing:-.5px}
+.hl{font-family:'Barlow Condensed','DIN Condensed',Impact,sans-serif;font-weight:700;text-transform:uppercase;line-height:.95;letter-spacing:.2px}
+.ui{font-family:'Jost','Stolzl',Arial,sans-serif;font-weight:500}
+.mono{font-family:'IBM Plex Mono','Andale Mono',monospace;font-weight:500;letter-spacing:2.4px;text-transform:uppercase;font-size:12px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:'Inter',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.eyebrow::before{content:'';width:32px;height:3px;background:currentColor;display:inline-block}
+.body{font-family:'Inter',Arial,sans-serif;font-size:16px;line-height:1.6;color:#525050}
+.label{font-family:'Barlow Condensed','DIN Condensed',Impact,sans-serif;font-weight:700;text-transform:uppercase;font-size:28px;line-height:1;letter-spacing:.4px;color:#030303;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:58px;padding:0 32px;background:#F70505;color:#fff;font-family:'Jost','Stolzl',Arial,sans-serif;font-weight:500;font-size:17px;letter-spacing:.4px;border:0;border-radius:0;cursor:pointer;white-space:nowrap;box-sizing:border-box;text-decoration:none}
+.btn:hover{background:#d10404;color:#fff}
+.btn-blue{background:#2E9AF7}.btn-blue:hover{background:#1a86e0;color:#fff}
+.btn-black{background:#030303}.btn-black:hover{background:#2a2a2a;color:#fff}
+.btn-outline{background:#fff;color:#030303;border:2px solid #030303}.btn-outline:hover{background:#030303;color:#fff}
+.btn-sm{height:48px;padding:0 22px;font-size:15px}
+.ph{background:#E3E3E3;border:1px dashed #837D7D;color:#525050;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;line-height:1.5;padding:12px;box-sizing:border-box}
+.star{color:#F80811;letter-spacing:1px;font-size:15px}
+.navlink{font-family:'Jost','Stolzl',Arial,sans-serif;font-weight:500;font-size:15px;color:#030303;padding:8px 0}
+.footlink{font-family:'Inter',Arial,sans-serif;font-size:14px;color:#bdbaba;line-height:2.1}
+.sw{width:34px;height:34px;border:1px solid rgba(0,0,0,.15);box-sizing:border-box;cursor:pointer;display:block}
+.sw-on{outline:3px solid #030303;outline-offset:2px}
+.thumb{width:84px;height:84px;object-fit:cover;display:block;border:2px solid transparent;box-sizing:border-box;cursor:pointer}
+.thumb-on{border-color:#030303}
+.tier{border:1px solid #d3d3d3;padding:12px 14px;display:flex;flex-direction:column;gap:2px;cursor:pointer;background:#fff}
+.acc{border-top:1px solid #E3E3E3;padding:20px 0;display:flex;align-items:center;justify-content:space-between;cursor:pointer}
+.chip{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border:1px solid #d3d3d3;font-family:'Jost',Arial,sans-serif;font-size:13px;font-weight:500;color:#030303;background:#fff;white-space:nowrap}
+.chip-ok{border-color:#2E9AF7;color:#1a6fb8}
+</style>
+
+<style>
+:root{--g:max(64px, calc((100vw - 1312px) / 2))}
+html{scroll-behavior:smooth}
+body{overflow-x:clip}
+button{font-family:inherit} form{margin:0}
+.ul-toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,24px);opacity:0;pointer-events:none;background:#030303;color:#fff;font-family:'Jost',Arial,sans-serif;font-weight:500;font-size:15px;padding:14px 22px;border-left:5px solid #2E9AF7;z-index:200;transition:opacity .2s,transform .2s;max-width:90vw}
+.ul-toast.show{opacity:1;transform:translate(-50%,0)}
+a[href="#cart"] span.bump{animation:bump .35s}
+@keyframes bump{50%{transform:scale(1.35)}}
+:focus-visible{outline:3px solid #2E9AF7;outline-offset:2px}
+</style>
+<style>
+.tier{position:relative;border:1px solid #d3d3d3}
+.tier .badge{display:none;position:absolute;top:-11px;left:10px;background:#030303;color:#fff;font-family:'Jost',Arial,sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px}
+.tier.on{box-shadow:inset 0 0 0 3px #030303;border-color:#030303}
+.tier.on .badge{display:block}
+.js-thumb{cursor:pointer}
+#sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:100;background:#fff;border-top:5px solid #F70505;padding:12px var(--g);display:flex;align-items:center;gap:20px;transform:translateY(110%);transition:transform .25s ease;box-sizing:border-box}
+#sticky-bar.show{transform:translateY(0)}
+body:has(#sticky-bar.show) .ul-toast{bottom:104px}
+#sticky-name{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.acc{user-select:none}
+</style>
+<link rel="stylesheet" href="assets/responsive.css">
+</head>
+<body>
+<div style="font-family: 'Inter', Arial, sans-serif; color: #030303; background: #ffffff; display: flex; flex-direction: column;">
+
+<!-- Promo bar -->
+<div class="mono" style="background: #030303; color: #FCF9F9; height: 40px; display: flex; align-items: center; justify-content: center; gap: 40px;">
+  <span>Free US shipping $75+</span><span style="color: #FC0000;">//</span><span>30-day guarantee</span><span style="color: #2E9AF7;">//</span><span>Ships in 24h from Mount Vernon, NY</span>
+</div>
+
+<!-- Header -->
+<header style="height: 88px; display: flex; align-items: center; gap: 40px; padding: 0 var(--g); background: #fff; border-bottom: 1px solid #E3E3E3; box-sizing: border-box;">
+  <a href="index.html" aria-label="uLace home" style="display: flex; align-items: center; flex-shrink: 0;"><img src="assets/ulace-logo.png" alt="uLace no-tie laces" style="height: 56px; width: auto; display: block;"></a>
+  <nav aria-label="Main" style="display: flex; align-items: center; gap: 30px; flex-grow: 1;">
+    <a class="navlink" href="#top">Shop all</a><a class="navlink" href="#top">Best sellers</a><a class="navlink" href="#fit">Shop by size</a><a class="navlink" href="#fit">Find your fit</a><a class="navlink" href="#top">Accessories</a><a class="navlink" href="#top">Our story</a>
+  </nav>
+  <form role="search" style="display: flex; align-items: center; gap: 10px; height: 46px; width: 260px; border: 2px solid #030303; padding: 0 14px; box-sizing: border-box; background: #fff;">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#030303" stroke-width="2.5"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+    <label for="search" style="position: absolute; left: -9999px;">Search</label>
+    <input id="search" type="search" placeholder="Search a sneaker" style="border: 0; background: transparent; font-family: 'Jost', Arial, sans-serif; font-size: 14px; flex-grow: 1; outline: none; color: #030303;">
+  </form>
+  <div style="display: flex; align-items: center; gap: 22px; flex-shrink: 0;">
+    <a href="#account" aria-label="Account" style="display: inline-flex;"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#030303" stroke-width="2.2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg></a>
+    <a href="#cart" aria-label="Cart, 2 items" style="display: inline-flex; position: relative;"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#030303" stroke-width="2.2"><path d="M6 8h12l1 13H5L6 8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg><span class="ui" style="position: absolute; top: -9px; right: -11px; background: #030303; color: #fff; font-size: 11px; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;">2</span></a>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="mono" style="padding: 18px var(--g) 0 var(--g); font-size: 11px; color: #837D7D; display: flex; gap: 10px;">
+  <a href="index.html" style="color: #837D7D;">Home</a><span>/</span><a href="#top" style="color: #837D7D;">Laces</a><span>/</span><a href="#top" style="color: #837D7D;">Classic</a><span>/</span><span style="color: #030303;">Black</span>
+</nav>
+
+<!-- Product: gallery + buy box -->
+<section id="top" class="pdp" style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; padding: 24px var(--g) 64px var(--g); align-items: start;">
+
+  <!-- Gallery: sticks while the buy box scrolls, releases at the end of the product section -->
+  <div id="gallery" style="display: grid; grid-template-columns: 84px 1fr; gap: 16px; position: sticky; top: 24px; align-self: start;">
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <img class="thumb thumb-on js-thumb" src="assets/01-classic-black.jpg" alt="Black uLace on white sneaker, close-up">
+      <div class="ph js-thumb" data-ph="PACK SHOT" aria-label="Pack shot" style="width: 84px; height: 84px; font-size: 9px; padding: 4px;">[PACK SHOT]</div>
+      <img class="thumb js-thumb" src="assets/05-fit-classic.jpg" alt="On foot — Air Jordan 1">
+      <img class="thumb js-thumb" src="assets/08-fit-shorts.jpg" alt="On foot — low-profile sneaker">
+      <div class="ph js-thumb" data-ph="INSTALL VIDEO ▶" aria-label="Install video" style="width: 84px; height: 84px; font-size: 9px; padding: 4px;">[INSTALL VIDEO ▶]</div>
+    </div>
+    <div style="position: relative; background: #fff; border: 1px solid #E3E3E3;">
+      <img id="main-img" src="assets/01-classic-black.jpg" alt="uLace Classic black laces on a white leather sneaker" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+      <div id="main-ph" class="ph" style="display: none; width: 100%; aspect-ratio: 1 / 1; border: 0; font-size: 14px;"></div>
+      <span class="ui" style="position: absolute; top: 16px; left: 16px; background: #030303; color: #fff; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; padding: 6px 10px;">Best seller</span>
+      <span id="media-count" class="mono" style="position: absolute; bottom: 16px; right: 16px; background: #fff; font-size: 10px; padding: 6px 10px; color: #525050;">1 / 5</span>
+    </div>
+  </div>
+
+  <!-- Buy box -->
+  <div style="display: flex; flex-direction: column; gap: 18px; position: relative;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <span class="mono" style="font-size: 11px; color: #1094F5;">Classic · wide eyelet-span 2.25″ – 4.25″</span>
+      <h1 class="hl" style="margin: 0; font-size: 56px;">uLace Classic <span id="title-colour" style="color: #FD0202;">— Black</span></h1>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span class="star" style="font-size: 16px;">★★★★★</span>
+        <a class="ui" href="#reviews" style="font-size: 14px; text-decoration: underline;">4.9 · 5,064 verified reviews</a>
+        <span style="width: 1px; height: 14px; background: #d3d3d3;"></span>
+        <img src="assets/shark-tank-callout.png" alt="As seen on Shark Tank" style="height: 26px; width: auto; display: block;">
+      </div>
+    </div>
+
+    <!-- Fit check -->
+    <div style="border-left: 5px solid #2E9AF7; padding: 12px 16px; background: #F4F8FB; display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <span class="hl" style="font-size: 20px;">Fits most adult sneakers</span>
+        <a class="ui" href="#fit" style="font-size: 13px; color: #1094F5; text-decoration: underline;">Check my sneaker in 30 sec →</a>
+      </div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <span class="chip chip-ok">✓ Air Force 1</span><span class="chip chip-ok">✓ Air Jordan 1</span><span class="chip chip-ok">✓ Vans Old Skool</span><span class="chip chip-ok">✓ New Balance 574</span><span class="chip">Stan Smith → Slims</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="position: relative; flex-grow: 1; height: 8px; background: #d9e3ec;"><div style="position: absolute; top: 0; height: 8px; background: #2E9AF7; left: 33%; width: 67%;"></div></div>
+        <span class="mono" style="font-size: 10px; color: #525050; white-space: nowrap;">Eyelet-span 2.25″ – 4.25″</span>
+      </div>
+    </div>
+
+    <!-- Colour -->
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;">
+        <span class="ui" style="font-size: 14px;">Colour: <strong id="colour-name">Black</strong></span>
+        <a id="all-colours" class="ui" href="#" style="font-size: 13px; color: #1094F5; text-decoration: underline;">All 83 colours</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <span class="mono" style="font-size: 10px; color: #837D7D;">Solids</span>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <span class="sw sw-on" style="background: #030303;" title="Black"></span><span class="sw" style="background: #ffffff;" title="White"></span><span class="sw" style="background: #1d2a5a;" title="Dark Navy"></span><span class="sw" style="background: #2E9AF7;" title="Royal Blue"></span><span class="sw" style="background: #F70505;" title="Scarlet Red"></span><span class="sw" style="background: #FDCD03;" title="Yellow"></span><span class="sw" style="background: #7BB661;" title="Kelly Green"></span><span class="sw" style="background: #8E44AD;" title="Bright Purple"></span><span class="sw" style="background: #F28CB1;" title="Cotton Candy"></span><span class="sw" style="background: #FF8C42;" title="Orange"></span><span class="sw" style="background: #6F6C6C;" title="Grey"></span><span class="sw" style="background: #A0522D;" title="Brown"></span>
+        </div>
+        <span class="mono" style="font-size: 10px; color: #837D7D;">Chambray · Prints · Neons</span>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <span class="sw" style="background: linear-gradient(135deg,#1d2a5a 50%,#8aa0c8 50%);" title="Royal Blue Chambray"></span><span class="sw" style="background: linear-gradient(135deg,#b52a2a 50%,#e8a0a0 50%);" title="Scarlet Chambray"></span><span class="sw" style="background: linear-gradient(135deg,#F70505 33%,#fff 33%,#fff 66%,#2E9AF7 66%);" title="America"></span><span class="sw" style="background: repeating-linear-gradient(45deg,#c9a227 0 4px,#2a2a2a 4px 8px);" title="Leopard"></span><span class="sw" style="background: #ccff00;" title="Neon Yellow"></span><span class="sw" style="background: #ff6a00;" title="Neon Orange"></span><span class="sw" style="background: #ff2d95;" title="Neon Pink"></span>
+          <button type="button" id="more-colours" class="chip" style="height: 34px; cursor: pointer;">+ 64 more</button>
+        </div>
+        <div id="extra-swatches" style="display: none; gap: 10px; flex-wrap: wrap;"><span class="sw" style="background: #7fb2ff;" title="Light Blue"></span><span class="sw" style="background: #bfe3f5;" title="Icy Blue"></span><span class="sw" style="background: #b9a3e3;" title="Lavender"></span><span class="sw" style="background: #ff3d8b;" title="Hot Pink"></span><span class="sw" style="background: #ff8fc7;" title="Bubblegum Pink"></span><span class="sw" style="background: #f7c6d6;" title="Light Pink"></span><span class="sw" style="background: #c3b091;" title="Khaki"></span><span class="sw" style="background: #5a3a22;" title="Dark Brown"></span><span class="sw" style="background: #6b1f2a;" title="Team Maroon"></span><span class="sw" style="background: #d9622b;" title="Texas Orange"></span><span class="sw" style="background: #f7b38a;" title="Peachy Orange"></span><span class="sw" style="background: #0f2b5b;" title="Light Navy"></span><span class="sw" style="background: #2fb3a3;" title="Blue Teal"></span><span class="sw" style="background: #9be3c4;" title="Minty Green"></span><span class="sw" style="background: #4b5320;" title="Army Green"></span><span class="sw" style="background: #e9e3d3;" title="Canvas / Off-White"></span></div>
+      </div>
+    </div>
+
+    <!-- Pair / pack + bundle ladder -->
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;">
+        <span class="ui" style="font-size: 14px;">How many sneakers are you lacing?</span>
+        <span class="body" style="font-size: 12px; line-height: 1.3;">2 packs lace one pair</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+        <div class="tier" data-packs="1" data-price="6.49">
+          <span class="badge">Selected</span>
+          <span class="mono" style="font-size: 10px; color: #837D7D;">Single</span>
+          <span class="hl" style="font-size: 22px;">1 pack</span>
+          <span class="ui" style="font-size: 14px;">$6.49</span>
+          <span class="body" style="font-size: 11px; line-height: 1.3;">top up a colour</span>
+        </div>
+        <div class="tier on" data-packs="2" data-price="12.98" aria-checked="true">
+          <span class="badge">Selected</span>
+          <span class="mono" style="font-size: 10px; color: #837D7D;">1 pair</span>
+          <span class="hl" style="font-size: 22px;">2 packs</span>
+          <span class="ui" style="font-size: 14px;">$12.98</span>
+          <span class="body" style="font-size: 11px; line-height: 1.3;">one pair of sneakers</span>
+        </div>
+        <div class="tier" data-packs="4" data-price="25.96">
+          <span class="badge">Selected</span>
+          <span class="mono" style="font-size: 10px; color: #837D7D;">2 pairs</span>
+          <span class="hl" style="font-size: 22px;">4 packs</span>
+          <span class="ui" style="font-size: 14px;">$25.96</span>
+          <span class="body" style="font-size: 11px; line-height: 1.3;">mix any colours</span>
+        </div>
+        <div class="tier" data-packs="8" data-price="41.54" style="border-color: #2E9AF7; background: #F4F8FB;">
+          <span class="badge">Selected</span>
+          <span class="mono" style="font-size: 10px; color: #1094F5;">Best value</span>
+          <span class="hl" style="font-size: 22px;">8 packs</span>
+          <span class="ui" style="font-size: 14px;">$41.54 <span style="color: #1094F5; font-size: 12px;">save $10.38</span></span>
+          <span class="body" style="font-size: 11px; line-height: 1.3;">buy 4, get 4 at 40% off</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; gap: 10px;">
+        <div style="display: flex; align-items: center; border: 2px solid #030303; height: 58px; box-sizing: border-box;">
+          <button type="button" id="qty-minus" aria-label="Decrease quantity" class="ui" style="width: 44px; height: 100%; border: 0; background: #fff; font-size: 20px; cursor: pointer;">−</button>
+          <span id="qty-val" class="ui" aria-live="polite" style="width: 40px; text-align: center; font-size: 16px;">1</span>
+          <button type="button" id="qty-plus" aria-label="Increase quantity" class="ui" style="width: 44px; height: 100%; border: 0; background: #fff; font-size: 20px; cursor: pointer;">+</button>
+        </div>
+        <button type="button" id="add-btn" class="btn" style="flex-grow: 1;">Add 2 packs to cart · $12.98</button>
+      </div>
+      <button type="button" id="buy-now" class="btn btn-black" style="width: 100%;">Buy now with Shop Pay</button>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 4px;">
+        <div style="border-left: 5px solid #2E9AF7; padding-left: 10px;"><div class="hl" style="font-size: 16px;">30-day guarantee</div><div class="body" style="font-size: 12px; line-height: 1.4;">Love them or return them</div></div>
+        <div style="border-left: 5px solid #2E9AF7; padding-left: 10px;"><div class="hl" style="font-size: 16px;">Ships in 24h</div><div class="body" style="font-size: 12px; line-height: 1.4;">From Mount Vernon, NY</div></div>
+        <div style="border-left: 5px solid #2E9AF7; padding-left: 10px;"><div class="hl" style="font-size: 16px;">Free US shipping $75+</div><div class="body" style="font-size: 12px; line-height: 1.4;">$2.99 flat on $40+</div></div>
+      </div>
+    </div>
+
+    <!-- Three photo reviews -->
+    
+  </div>
+</section>
+
+<!-- Sticky buy bar: slides in once the main Add to cart scrolls away -->
+<div id="sticky-bar" aria-hidden="true">
+  <img id="sticky-img" src="assets/01-classic-black.jpg" alt="" style="width: 48px; height: 48px; object-fit: cover; display: block;">
+  <span id="sticky-name" class="hl" style="font-size: 22px; flex-grow: 1;">uLace Classic — Black · 2 packs</span>
+  <span class="star" style="font-size: 13px;">★★★★★ <span class="ui" style="color: #525050;">4.9 · 5,064</span></span>
+  <span id="sticky-price" class="hl" style="font-size: 26px;">$12.98</span>
+  <button type="button" id="sticky-add" class="btn btn-sm">Add to cart</button>
+</div>
+
+<!-- Complete the pair -->
+<section aria-label="Complete the pair" style="padding: 56px var(--g) 0 var(--g); display: flex; flex-direction: column; gap: 24px;">
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <h2 class="label">Complete the pair</h2>
+    <span class="ui" style="font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; color: #fff; background: #030303; padding: 10px 16px;">10% off when you add 2</span>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;">
+    <article style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;">
+      <img src="assets/11-white-navy.jpg" alt="Navy uLace Classic" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+      <div style="padding: 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px;"><div><div class="hl" style="font-size: 20px;">Classic — Navy</div><div class="body" style="font-size: 12px; line-height: 1.3;">second look · $6.49</div></div><button type="button" class="btn btn-outline btn-sm" style="height: 40px; padding: 0 14px; font-size: 13px;">Add</button></div>
+    </article>
+    <article style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;">
+      <img src="assets/12-white-red.jpg" alt="Red uLace Classic" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;">
+      <div style="padding: 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px;"><div><div class="hl" style="font-size: 20px;">Classic — Scarlet</div><div class="body" style="font-size: 12px; line-height: 1.3;">second look · $6.49</div></div><button type="button" class="btn btn-outline btn-sm" style="height: 40px; padding: 0 14px; font-size: 13px;">Add</button></div>
+    </article>
+    <article style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;">
+      <img src="assets/20-socks-black.jpg" alt="COLR mid-calf socks black" style="width: 100%; aspect-ratio: 1 / 1; object-fit: contain; padding: 20px; box-sizing: border-box; display: block;">
+      <div style="padding: 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px;"><div><div class="hl" style="font-size: 20px;">COLR socks — Black</div><div class="body" style="font-size: 12px; line-height: 1.3;">colour-matched · $9.99</div></div><button type="button" class="btn btn-outline btn-sm" style="height: 40px; padding: 0 14px; font-size: 13px;">Add</button></div>
+    </article>
+    <article style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;">
+      <img src="assets/17-cap-black.jpg" alt="COLR runners cap black" style="width: 100%; aspect-ratio: 1 / 1; object-fit: contain; padding: 20px; box-sizing: border-box; display: block;">
+      <div style="padding: 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px;"><div><div class="hl" style="font-size: 20px;">COLR cap — Black</div><div class="body" style="font-size: 12px; line-height: 1.3;">$11.99</div></div><button type="button" class="btn btn-outline btn-sm" style="height: 40px; padding: 0 14px; font-size: 13px;">Add</button></div>
+    </article>
+  </div>
+</section>
+
+<!-- How it works -->
+<section aria-label="How it works" style="margin: 56px var(--g) 0 var(--g); display: grid; grid-template-columns: 220px repeat(3, minmax(0, 1fr)); gap: 32px; align-items: start; padding: 40px 0; border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3;">
+  <div style="display: flex; flex-direction: column; gap: 6px;"><h2 class="label">How it works</h2><span class="mono" style="font-size: 11px; color: #837D7D;">3-minute install</span></div>
+  <div style="display: flex; gap: 16px;"><span class="hl" style="font-size: 40px; line-height: 1;">1</span><div><div class="hl" style="font-size: 22px;">Pull out the old laces</div><div class="body" style="font-size: 14px; line-height: 1.5;">Count your eyelet pairs — 6 segments per pack.</div></div></div>
+  <div style="display: flex; gap: 16px;"><span class="hl" style="font-size: 40px; line-height: 1;">2</span><div><div class="hl" style="font-size: 22px;">Push and pull each uLace through</div><div class="body" style="font-size: 14px; line-height: 1.5;">Aglets go in like a normal lace.</div></div></div>
+  <div style="display: flex; gap: 16px;"><span class="hl" style="font-size: 40px; line-height: 1; color: #2788EA;">3</span><div><div class="hl" style="font-size: 22px;">Slip on and go</div><div class="body" style="font-size: 14px; line-height: 1.5;">Laced-feel fit, no knots, forever.</div></div></div>
+</section>
+
+<!-- Fit guide -->
+<section id="fit" style="padding: 64px var(--g); background: #E3E3E3; display: flex; flex-direction: column; gap: 28px;">
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;">
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <span class="eyebrow" style="color: #1094F5;">Fit guide</span>
+      <h2 class="display" style="margin: 0; font-size: 48px;"><span style="color: #030303;">Not sure Classic is </span><span style="color: #2788EA;">your size?</span></h2>
+    </div>
+    <a class="btn btn-blue" href="#fit">Take the 30-sec quiz</a>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;">
+    <article style="background: #2F0101; border-left: 5px solid #FC0000; outline: 4px solid #030303; color: #FCF9F9; padding: 18px; display: flex; flex-direction: column; gap: 10px;">
+      <img src="assets/05-fit-classic.jpg" alt="" style="width: 100%; height: 120px; object-fit: cover; display: block;">
+      <div class="hl" style="font-size: 28px; color: #FC0000;">Classic <span class="mono" style="font-size: 9px; color: #fff; background: #FC0000; padding: 3px 6px; vertical-align: middle; letter-spacing: 1px;">You're here</span></div>
+      <div class="mono" style="font-size: 10px; color: #bdbaba;">2.25″ – 4.25″ · wide</div>
+      <p class="body" style="margin: 0; font-size: 13px; color: #d9d6d6; line-height: 1.45;">AF1, Jordan 1, Vans, most adult sneakers.</p>
+    </article>
+    <article style="background: #01213C; border-left: 5px solid #4C90FD; color: #FCF9F9; padding: 18px; display: flex; flex-direction: column; gap: 10px;">
+      <img src="assets/07-fit-slims.jpg" alt="" style="width: 100%; height: 120px; object-fit: cover; display: block;">
+      <div class="hl" style="font-size: 28px; color: #4C90FD;">Slims</div>
+      <div class="mono" style="font-size: 10px; color: #bdbaba;">1.75″ – 2.25″ · medium</div>
+      <p class="body" style="margin: 0; font-size: 13px; color: #d9d6d6; line-height: 1.45;">Stan Smith, Chuck 70, slim fashion sneakers.</p>
+      <a class="ui" href="#top" style="font-size: 13px; color: #4C90FD; text-decoration: underline;">Switch to Slims →</a>
+    </article>
+    <article style="background: #4A4725; border-left: 5px solid #B7A542; color: #FCF9F9; padding: 18px; display: flex; flex-direction: column; gap: 10px;">
+      <img src="assets/08-fit-shorts.jpg" alt="" style="width: 100%; height: 120px; object-fit: cover; display: block;">
+      <div class="hl" style="font-size: 28px; color: #B7A542;">Shorts</div>
+      <div class="mono" style="font-size: 10px; color: #bdbaba;">1.25″ – 1.75″ · narrow</div>
+      <p class="body" style="margin: 0; font-size: 13px; color: #d9d6d6; line-height: 1.45;">Low-profile trainers, many women’s sneakers.</p>
+      <a class="ui" href="#top" style="font-size: 13px; color: #B7A542; text-decoration: underline;">Switch to Shorts →</a>
+    </article>
+    <article style="background: #2B2900; border-left: 5px solid #FDCD03; color: #FCF9F9; padding: 18px; display: flex; flex-direction: column; gap: 10px;">
+      <img src="assets/06-fit-kiddos.jpg" alt="" style="width: 100%; height: 120px; object-fit: cover; display: block;">
+      <div class="hl" style="font-size: 28px; color: #FDCD03;">Kiddos</div>
+      <div class="mono" style="font-size: 10px; color: #bdbaba;">1.75″ – 2.25″ · kids</div>
+      <p class="body" style="margin: 0; font-size: 13px; color: #d9d6d6; line-height: 1.45;">The fit most children’s sneakers need.</p>
+      <a class="ui" href="#top" style="font-size: 13px; color: #FDCD03; text-decoration: underline;">Switch to Kiddos →</a>
+    </article>
+  </div>
+  <div style="display: flex; align-items: center; gap: 20px; background: #fff; border-left: 5px solid #2E9AF7; padding: 16px 20px;">
+    <div class="ph" style="width: 140px; height: 90px; flex-shrink: 0;">[DIAGRAM: eyelet-span]</div>
+    <p class="body" style="margin: 0; font-size: 14px;"><strong style="color: #030303;">Eyelet-span</strong> is the gap between two eyelets across the top of your sneaker. Measure it once, pick the size whose range it falls in. Classic fits 2.25″ to 4.25″.</p>
+  </div>
+</section>
+
+<!-- Details accordions + brand band -->
+<section aria-label="Product details" style="padding: 64px var(--g); display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;">
+  <div style="display: flex; flex-direction: column;">
+    <h2 class="label" style="margin-bottom: 8px;">Details</h2>
+    <div class="acc" data-open style="border-top: 0;"><span class="hl" style="font-size: 22px;">What’s in the box</span><span class="hl" style="font-size: 22px;">−</span></div>
+    <div class="body" style="font-size: 14px; padding: 0 0 20px;">6 modular elastic lace segments and a photo instruction sheet. Most sneakers have 5–7 eyelet pairs per shoe, so one pair of sneakers needs 2 packs.</div>
+    <div class="acc"><span class="hl" style="font-size: 22px;">Materials</span><span class="hl" style="font-size: 22px;">+</span></div>
+    <div class="body" style="font-size: 14px; padding: 0 0 20px;">Truly-woven, yarn-dyed polyester around uLace’s own extruded lycra filament. That combination is what gives the laced-feel fit — snug, with give — instead of the stiff, one-size feel of silicone laces.</div>
+    <div class="acc"><span class="hl" style="font-size: 22px;">Shipping and returns</span><span class="hl" style="font-size: 22px;">+</span></div>
+    <div class="body" style="font-size: 14px; padding: 0 0 20px;">$2.99 US shipping on orders over $40, free over $75. Every order ships within 24 hours from Mount Vernon, NY. 30-day guarantee: love them or return them for a refund. Wrong size or colour? Exchange it — try one pack for size before opening the rest.</div>
+    <div class="acc"><span class="hl" style="font-size: 22px;">Will they work on my sneaker?</span><span class="hl" style="font-size: 22px;">+</span></div>
+    <div class="body" style="font-size: 14px; padding: 0 0 20px;">Classic fits sneakers with an eyelet-span of 2.25″–4.25″ — the distance between two eyelets across the top of the shoe. Modular uLaces work on sneakers with eyelets; for loops or hooks, choose ProFormance. Not sure? Take the 30-second fit quiz.</div>
+    <div class="acc" style="border-bottom: 1px solid #E3E3E3;"><span class="hl" style="font-size: 22px;">FAQ</span><span class="hl" style="font-size: 22px;">+</span></div>
+    <div class="body" style="font-size: 14px; padding: 0 0 20px;"><strong style="color:#030303;">Are they easy to install?</strong> Yes — the aglets go through standard eyelets like a normal lace: a push and a pull per eyelet pair.<br><br><strong style="color:#030303;">Why 2 packs?</strong> Each pack has 6 segments. Most sneakers have 5–7 eyelet pairs per shoe, so a pair of sneakers needs 2 packs.</div>
+  </div>
+  <div style="background: #030303; color: #FCF9F9; padding: 40px; display: flex; flex-direction: column; gap: 16px; border-left: 5px solid #FC0000;">
+    <span class="eyebrow" style="color: #FCF9F9;">Why uLace, not the copies</span>
+    <h3 class="display" style="margin: 0; font-size: 34px;"><span style="display: block;">Woven. Not </span><span style="display: block; color: #FD0202;">plastic.</span></h3>
+    <p class="body" style="margin: 0; font-size: 14px; color: #bdbaba;">Truly-woven yarn-dyed polyester around our own lycra filament gives the laced-feel fit. Silicone one-size copies don’t fit any sneaker well, and they snap. uLace has shipped from Mount Vernon, NY since 2009 and won Shark Tank in 2014.</p>
+    <div style="display: flex; align-items: center; gap: 16px;"><img src="assets/shark-tank-logo.png" alt="Shark Tank" style="height: 48px; width: auto; display: block;"><span class="hl" style="font-size: 22px; color: #37ABC8;">– Winner! 2014</span></div>
+  </div>
+</section>
+
+<!-- Reviews wall -->
+<section id="reviews" style="padding: 0 var(--g) 64px var(--g); display: flex; flex-direction: column; gap: 24px;">
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+    <h2 class="label">5,064 reviews on Classic</h2>
+    <div style="display: flex; align-items: center; gap: 18px; background: #F80811; color: #fff; padding: 10px 20px;">
+      <span class="hl" style="font-size: 56px; line-height: 1;">4.9</span>
+      <div style="display: flex; flex-direction: column; gap: 2px;"><span style="color: #fff; letter-spacing: 2px; font-size: 16px;">★★★★★</span><span class="ui" style="font-size: 12px;">Verified by Loox · filter by sneaker</span></div>
+    </div>
+  </div>
+  <div style="display: flex; gap: 8px;"><button type="button" class="chip js-chip chip-ok" aria-pressed="true" style="cursor: pointer;">All</button><button type="button" class="chip js-chip" aria-pressed="false" style="cursor: pointer;">Air Force 1</button><button type="button" class="chip js-chip" aria-pressed="false" style="cursor: pointer;">Jordan 1</button><button type="button" class="chip js-chip" aria-pressed="false" style="cursor: pointer;">Vans</button><button type="button" class="chip js-chip" aria-pressed="false" style="cursor: pointer;">Kids</button><button type="button" class="chip js-chip" aria-pressed="false" style="cursor: pointer;">Seniors</button><button type="button" class="chip js-chip" aria-pressed="false" style="cursor: pointer;">With photos</button></div>
+  <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;">
+    <article style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;"><div class="ph" style="width: 100%; height: 200px;">[CUSTOMER PHOTO]</div><div style="padding: 14px; display: flex; flex-direction: column; gap: 6px;"><span class="star" style="font-size: 12px;">★★★★★</span><p class="body" style="margin: 0; font-size: 13px; color: #030303; line-height: 1.45;">“Took a chance — installed the first pair, they are wonderful. Ordered 2 more sets.”</p><span class="mono" style="font-size: 9px; color: #837D7D;">John H. · verified · Black</span></div></article>
+    <article style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;"><div class="ph" style="width: 100%; height: 200px;">[CUSTOMER PHOTO]</div><div style="padding: 14px; display: flex; flex-direction: column; gap: 6px;"><span class="star" style="font-size: 12px;">★★★★★</span><p class="body" style="margin: 0; font-size: 13px; color: #030303; line-height: 1.45;">“Perfect match for my tropical Jordan 1s.”</p><span class="mono" style="font-size: 9px; color: #837D7D;">Jason J. · verified · Tropical</span></div></article>
+    <article style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;"><div class="ph" style="width: 100%; height: 200px;">[CUSTOMER PHOTO]</div><div style="padding: 14px; display: flex; flex-direction: column; gap: 6px;"><span class="star" style="font-size: 12px;">★★★★★</span><p class="body" style="margin: 0; font-size: 13px; color: #030303; line-height: 1.45;">“Makes my tennis shoes look neat and tidy, no dangling strings.”</p><span class="mono" style="font-size: 9px; color: #837D7D;">Naomi C. · verified · White</span></div></article>
+    <article style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;"><div class="ph" style="width: 100%; height: 200px;">[CUSTOMER PHOTO]</div><div style="padding: 14px; display: flex; flex-direction: column; gap: 6px;"><span class="star" style="font-size: 12px;">★★★★★</span><p class="body" style="margin: 0; font-size: 13px; color: #030303; line-height: 1.45;">“Fit a high-top boot style shoe — you can’t beat that.”</p><span class="mono" style="font-size: 9px; color: #837D7D;">Peter B. · verified · Black</span></div></article>
+  </div>
+  <a class="btn btn-outline" href="#reviews" style="align-self: center;">Load more reviews</a>
+</section>
+
+<!-- Footer -->
+<footer style="background: #030303; color: #FCF9F9; padding: 48px var(--g) 100px var(--g); display: flex; flex-direction: column; gap: 32px;">
+  <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px;">
+    <div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+      <div style="background: #fff; padding: 10px 16px; display: inline-flex;"><img src="assets/ulace-logo.png" alt="uLace no-tie laces" style="height: 44px; width: auto; display: block;"></div>
+      <p class="body" style="margin: 0; font-size: 14px; color: #bdbaba; line-height: 1.6; max-width: 320px;">The original no-tie sneaker laces. Designed and shipped from Mount Vernon, NY since 2009.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 4px;"><span class="hl" style="font-size: 22px; margin-bottom: 8px;">Shop</span><a class="footlink" href="#top">Classic</a><a class="footlink" href="#top">Slims</a><a class="footlink" href="#top">Shorts</a><a class="footlink" href="#top">Kiddos</a><a class="footlink" href="#top">ProFormance</a></div>
+    <div style="display: flex; flex-direction: column; gap: 4px;"><span class="hl" style="font-size: 22px; margin-bottom: 8px;">Help</span><a class="footlink" href="#fit">Find your fit</a><a class="footlink" href="#faq">FAQs</a><a class="footlink" href="#shipping">Shipping</a><a class="footlink" href="#returns">Returns and exchanges</a></div>
+    <div style="border-left: 5px solid #2E9AF7; padding-left: 16px; display: flex; flex-direction: column; gap: 10px;"><span class="hl" style="font-size: 22px;">The uLace guarantee</span><p class="body" style="margin: 0; font-size: 14px; color: #bdbaba; line-height: 1.6;">30 days to decide. Love them or we take them back.</p></div>
+  </div>
+  <div style="border-top: 1px solid #525050; padding-top: 20px;"><span class="mono" style="font-size: 10px; color: #837D7D; letter-spacing: 1.5px;">© 2026 uLace no-tie sneaker laces · Privacy · Terms · Accessibility</span></div>
+</footer>
+
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

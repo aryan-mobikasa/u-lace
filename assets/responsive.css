@@ -1,0 +1,154 @@
+/* uLace concept site — responsive layer (overrides the desktop inline styles) */
+:root { --g: max(64px, calc((100vw - 1312px) / 2)); }
+img { max-width: 100%; }
+
+/* ---------- header: hamburger menu below 1100px ---------- */
+.menu-btn { display: none; width: 44px; height: 44px; border: 2px solid #030303; background: #fff; cursor: pointer; align-items: center; justify-content: center; flex-shrink: 0; }
+.menu-btn svg { display: block; }
+@media (max-width: 1100px) {
+  header { position: relative; gap: 16px !important; }
+  header nav[aria-label="Main"] { display: none !important; }
+  header form[role="search"] { width: auto !important; flex-grow: 1; min-width: 0; }
+  .menu-btn { display: inline-flex; margin-left: auto; }
+  header.open nav[aria-label="Main"] { display: flex !important; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0 !important; background: #fff; border-bottom: 5px solid #F70505; padding: 8px var(--g) 16px; z-index: 90; }
+  header.open nav[aria-label="Main"] a { padding: 14px 0 !important; border-bottom: 1px solid #E3E3E3; font-size: 18px !important; text-align: left; justify-content: flex-start !important; display: flex !important; }
+}
+
+/* ---------- tablet ≤ 1024 ---------- */
+@media (max-width: 1024px) {
+  :root { --g: 32px; }
+  .display { letter-spacing: -.3px; }
+  /* promo bar: one message only */
+  body > div > div.mono:first-child span:nth-child(n+2) { display: none !important; }
+  body > div > div.mono:first-child { font-size: 11px !important; letter-spacing: 1.6px !important; }
+  /* 4-up grids → 2-up */
+  section[aria-label="Why shop with uLace"],
+  #best-sellers > div:nth-of-type(2),
+  #sizes > div:nth-of-type(2),
+  section[aria-label="Colours"] > div:first-child,
+  #accessories > div:nth-of-type(2),
+  section[aria-label="Complete the pair"] > div:nth-of-type(2),
+  #fit > div:nth-of-type(2),
+  #reviews > div:nth-of-type(3) { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  /* 3-up → 1 */
+  section[aria-label="Bundle and save"] > div:nth-of-type(2),
+  section[aria-label="Customer reviews"] > div:nth-of-type(2) { grid-template-columns: 1fr !important; }
+  /* two-column blocks → stacked */
+  #sizes > div:nth-of-type(3),
+  #story > div:first-child,
+  section[aria-label="Email sign-up"],
+  section[aria-label="Product details"],
+  #top.pdp { grid-template-columns: 1fr !important; }
+  #story > div:first-child > :first-child { height: 420px !important; }
+  #story > div:first-child > div { padding: 48px var(--g) !important; }
+  div[aria-label="How it works"], section[aria-label="How it works"] { grid-template-columns: 1fr !important; gap: 20px !important; }
+  footer > div:first-child { grid-template-columns: 1fr 1fr !important; }
+  /* homepage hero */
+  #top:not(.pdp) { height: auto !important; min-height: 560px; }
+  #top:not(.pdp) h1 { font-size: 56px !important; }
+  /* press strip wraps */
+  section[aria-label="Press"] { flex-wrap: wrap; justify-content: center; }
+  section[aria-label="Press"] > div { flex-wrap: wrap; justify-content: center; gap: 20px 28px !important; }
+  /* section headings */
+  h2.hl, h2.display { font-size: 44px !important; }
+  /* ticker: scroll sideways instead of clipping */
+  body > div > div[style*="height: 56px"] { justify-content: flex-start !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch; }
+  /* PDP */
+  #gallery { position: static !important; grid-template-columns: 1fr !important; }
+  #gallery > div:first-child { order: 2; flex-direction: row !important; overflow-x: auto; padding-bottom: 4px; }
+  #gallery > div:first-child > * { flex-shrink: 0; }
+  #top.pdp h1 { font-size: 44px !important; }
+  #sticky-bar { gap: 12px; }
+}
+
+/* ---------- phone ≤ 640 ---------- */
+@media (max-width: 640px) {
+  :root { --g: 16px; }
+  header { height: 72px !important; }
+  header img[alt="uLace no-tie laces"] { height: 40px !important; }
+  header form[role="search"] { display: none !important; }
+  header > div:last-child { gap: 14px !important; }
+  /* homepage hero */
+  #top:not(.pdp) { min-height: 0; }
+  #top:not(.pdp) > div[style*="position: relative"] { padding: 40px var(--g) 40px !important; max-width: none !important; }
+  #top:not(.pdp) h1 { font-size: 40px !important; }
+  #top:not(.pdp) h1 span[style*="inline-block"] { padding: 2px 10px 4px !important; }
+  #top:not(.pdp) a.btn { width: 100%; }
+  #top:not(.pdp) > div > div[style*="display: flex; align-items: center; gap: 14px"] { flex-direction: column; align-items: stretch !important; }
+  #top:not(.pdp) img { object-position: 60% 70% !important; }
+  /* everything 1-up */
+  section[aria-label="Why shop with uLace"],
+  #best-sellers > div:nth-of-type(2),
+  #sizes > div:nth-of-type(2),
+  #accessories > div:nth-of-type(2),
+  section[aria-label="Complete the pair"] > div:nth-of-type(2),
+  #fit > div:nth-of-type(2),
+  #reviews > div:nth-of-type(3),
+  footer > div:first-child { grid-template-columns: 1fr !important; }
+  section[aria-label="Why shop with uLace"] { gap: 12px !important; }
+  /* section headers: stack title and button */
+  #best-sellers > div:first-child, #sizes > div:first-child, section[aria-label="Bundle and save"] > div:first-child,
+  section[aria-label="Customer reviews"] > div:first-child, #accessories > div:first-child, #fit > div:first-child,
+  #reviews > div:first-child, section[aria-label="Complete the pair"] > div:first-child,
+  section[aria-label="Colours"] > div:last-child { flex-direction: column; align-items: flex-start !important; gap: 16px !important; }
+  h2.hl, h2.display { font-size: 32px !important; }
+  h2.label { font-size: 24px !important; }
+  section { padding-top: 48px !important; padding-bottom: 48px !important; }
+  section[aria-label="Why shop with uLace"], section[aria-label="Press"], section[aria-label="Colours"], #story, #top { padding-top: 0 !important; padding-bottom: 0 !important; }
+  section[aria-label="Why shop with uLace"] { padding: 16px var(--g) !important; }
+  section[aria-label="Press"] { padding: 20px 0 !important; }
+  section[aria-label="Press"] > div { gap: 16px 20px !important; }
+  .press { height: 24px !important; }
+  .press-color { height: 36px !important; }
+  section[aria-label="Colours"] > div:first-child img { height: 220px !important; }
+  #story > div:first-child > :first-child { height: 300px !important; }
+  #story .display { font-size: 34px !important; }
+  #story > div:first-child > div > div[style*="grid-template-columns: repeat(3"] { gap: 10px !important; }
+  #story .hl[style*="font-size: 44px"] { font-size: 30px !important; }
+  div[aria-label="How it works"] { padding: 32px var(--g) !important; }
+  section[aria-label="Email sign-up"] form { flex-direction: column; }
+  section[aria-label="Email sign-up"] form .btn { width: 100%; }
+  section[aria-label="Email sign-up"] h2 { font-size: 30px !important; }
+  footer > div:last-child { flex-direction: column; align-items: flex-start !important; }
+  /* PDP */
+  nav[aria-label="Breadcrumb"] { flex-wrap: wrap; row-gap: 4px; }
+  #top.pdp { gap: 28px !important; padding-top: 12px !important; }
+  #top.pdp h1 { font-size: 36px !important; }
+  #top.pdp h1 span { display: block; }
+  #top.pdp > div:last-child > div:nth-of-type(2) > div:first-child { flex-direction: column; align-items: flex-start !important; gap: 6px; }
+  #top.pdp div[style*="grid-template-columns: repeat(4"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  #top.pdp div[style*="grid-template-columns: repeat(3"] { grid-template-columns: 1fr !important; }
+  #add-btn { font-size: 15px !important; padding: 0 14px !important; }
+  #sticky-bar { padding: 10px var(--g) !important; gap: 10px; }
+  #sticky-bar .star, #sticky-bar img { display: none !important; }
+  #sticky-bar #sticky-name { font-size: 16px !important; }
+  #sticky-bar #sticky-price { font-size: 20px !important; }
+  #sticky-add { height: 44px !important; padding: 0 16px !important; font-size: 14px !important; }
+  section[aria-label="Product details"] > div:last-child { padding: 28px var(--g) !important; }
+  section[aria-label="Product details"] .display { font-size: 28px !important; }
+  #reviews > div:nth-of-type(2) { overflow-x: auto; padding-bottom: 4px; }
+  #reviews > div:nth-of-type(2) .chip { flex-shrink: 0; }
+  #fit .btn { width: 100%; }
+  .btn { max-width: 100%; white-space: normal; text-align: center; }
+}
+
+@media (max-width: 380px) {
+  #top:not(.pdp) h1 { font-size: 34px !important; }
+  #top.pdp h1 { font-size: 32px !important; }
+}
+
+/* ---------- fixes found in device testing ---------- */
+@media (max-width: 640px) {
+  /* ProFormance + quiz cards: image above text */
+  #sizes > div:nth-of-type(3) > div { flex-direction: column; align-items: stretch !important; }
+  #sizes > div:nth-of-type(3) > div > .ph, #sizes > div:nth-of-type(3) > div > img { width: 100% !important; height: 160px !important; }
+  /* payment icons wrap */
+  footer > div:last-child > div { flex-wrap: wrap; }
+  /* PDP: fit-check chips wrap, measuring diagram stacks */
+  #fit > div:last-child { flex-direction: column; align-items: flex-start !important; }
+  #fit > div:last-child .ph { width: 100% !important; }
+  #top.pdp .ph[style*="width: 84px"] { flex-shrink: 0; }
+}
+/* ticker never scrolls the page */
+body > div > div[style*="height: 56px"] { width: 100%; min-width: 0; box-sizing: border-box; }
+body > div > div[style*="height: 56px"] > div { flex-shrink: 0; }
