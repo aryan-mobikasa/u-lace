@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>uLace Classic – Black | No-Tie Sneaker Laces | uLace®</title>
+<meta name="description" content="uLace Classic – Black. Converts wide eyelet-span sneakers into a perfect slip-on, quickly, easily and permanently. $6.49 per pack.">
+<link rel="icon" href="assets/ulace-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@500;600&display=swap">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  --black:#030303; --white:#FFFFFF; --off:#FCF9F9;
+  --red:#E50505; --red-accent:#E50000;
+  --blue:#0872CE; --blue-text:#2897F7; --blue-link:#0767AD; --blue-deco:#2E9AF7;
+  --grey:#E3E3E3; --body:#525050; --gold:#B88B00; --green-deco:#2E9E4F;
+  --f-disp:"Eveleth Clean","Archivo Black",Impact,sans-serif;
+  --f-cond:"DIN Condensed","Barlow Condensed",sans-serif;
+  --f-btn:"Stolzl","Jost",sans-serif;
+  --f-mono:"Andale Mono","IBM Plex Mono",monospace;
+  --f-body:Inter,Arial,sans-serif;
+  --gutter:clamp(16px,2.8vw,40px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:96px}
+body{margin:0;background:var(--white);color:var(--body);font-family:var(--f-body);font-size:16px;line-height:1.5;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:var(--blue-link)} a:hover{color:var(--black)}
+:focus-visible{outline:3px solid var(--blue-link);outline-offset:2px}
+h1,h2,h3,p{margin:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip:focus{position:fixed;top:8px;left:8px;width:auto;height:auto;clip:auto;margin:0;padding:12px 18px;background:var(--black);color:var(--off);z-index:100}
+.container{max-width:1280px;margin:0 auto;padding-inline:var(--gutter)}
+.disp{font-family:var(--f-disp);font-weight:400;text-transform:uppercase}
+.cond{font-family:var(--f-cond);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:44px;padding:6px 12px;font-family:var(--f-btn);font-weight:500;letter-spacing:.5px;text-decoration:none;color:var(--off);border:0;cursor:pointer}
+.btn:hover{color:var(--off);filter:brightness(.92)}
+.btn-red{background:var(--red)} .btn-blue{background:var(--blue)} .btn-black{background:var(--black)}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.eyebrow::before{content:"";width:40px;height:2px;background:currentColor;flex-shrink:0}
+
+/* ---------- Header (same as homepage) ---------- */
+.site-header{background:var(--white);border-bottom:4px solid var(--red-accent);position:relative;z-index:20}
+.hdr-top{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px;padding:9px clamp(16px,3.6vw,52px) 9px clamp(16px,3vw,44px)}
+.hdr-logo{justify-self:start;display:flex}
+.hdr-logo img{height:clamp(56px,6.4vw,92px);width:auto}
+.hdr-badge{height:clamp(34px,3.5vw,50px);width:auto}
+.hdr-actions{justify-self:end;display:flex;align-items:center;gap:4px}
+.icon-btn{width:48px;height:48px;padding:0;background:none;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--black)}
+.hdr-cta{margin-left:16px;width:173px;min-height:47px;flex-direction:column;align-items:flex-start;padding:6px 14px;font-size:16px;line-height:1.05}
+.menu-btn{display:none}
+.hdr-nav{border-top:1px solid var(--grey)}
+.hdr-nav ul{list-style:none;margin:0;padding:0 clamp(16px,3.6vw,52px);display:flex;flex-wrap:wrap;justify-content:center;gap:0 clamp(24px,3.6vw,52px)}
+.hdr-nav a{display:flex;align-items:center;gap:6px;min-height:44px;padding:14px 0;font-family:var(--f-btn);font-weight:500;font-size:15px;letter-spacing:1.5px;color:var(--black);text-decoration:none}
+.hdr-nav a:hover{color:var(--red)}
+.search-bar{display:none;border-top:1px solid var(--grey);padding:14px clamp(16px,3.6vw,52px)}
+.search-bar.open{display:block}
+.search-bar form{max-width:720px;margin:0 auto;display:flex;gap:10px}
+.search-bar input{flex:1;min-width:0;min-height:48px;border:2px solid var(--black);padding:0 14px;font:16px var(--f-body);color:var(--black)}
+.search-bar button{min-height:48px;padding:0 24px;font-size:15px}
+.mobile-panel{display:none}
+
+/* ---------- Sticky price bar ---------- */
+.price-bar{background:var(--black);color:var(--off);position:sticky;top:0;z-index:15}
+.price-bar .container{padding-block:16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 48px}
+.pb-name{font-size:34px;line-height:.95}
+.pb-price{display:flex;align-items:center;gap:18px}
+.pb-price .amt{font-size:40px;line-height:1}
+.pb-price .note{font-size:14px;line-height:1.25;letter-spacing:.5px;text-transform:uppercase}
+.pb-price .note span{display:block}
+.price-bar .btn{min-height:56px;padding:0 48px;font-size:18px;letter-spacing:1px}
+.notice{background:var(--red-accent);padding:14px var(--gutter);text-align:center}
+.notice p{font-size:17px;font-weight:600;color:var(--off)}
+
+/* ---------- Gallery + buy box ---------- */
+.pdp-main .container{padding-block:56px 96px;display:grid;grid-template-columns:minmax(0,640px) minmax(0,1fr);gap:64px;align-items:start}
+.gallery{display:flex;flex-direction:column;gap:16px;position:sticky;top:110px}
+.g-main{border:1px solid var(--body);aspect-ratio:1/1;overflow:hidden;background:var(--white)}
+.g-main img{width:100%;height:100%;object-fit:cover}
+.g-thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.g-thumbs button{padding:0;border:1px solid var(--body);background:var(--white);aspect-ratio:1/1;overflow:hidden;cursor:pointer}
+.g-thumbs button[aria-current="true"]{border:2px solid var(--black)}
+.g-thumbs img{width:100%;height:100%;object-fit:cover}
+.buy{display:flex;flex-direction:column;gap:22px;padding-top:8px;min-width:0}
+.buy-head{display:flex;flex-direction:column;gap:12px}
+.buy-head .kicker{font-size:14px;font-weight:700;letter-spacing:.5px;color:var(--blue-link)}
+.buy-head h1{font-size:clamp(44px,4.45vw,72px);line-height:1;color:var(--black)}
+.buy-head .tag{font-size:clamp(17px,1.4vw,22px);line-height:1.5;font-style:italic;font-weight:600}
+.rating-row{border-top:2px solid var(--black);border-bottom:2px solid var(--black);padding:14px 0;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;font-size:15px;color:var(--black)}
+.rating-row .stars{color:var(--gold);font-size:22px;letter-spacing:2px;line-height:1}
+.rating-row a{font-weight:600;text-decoration:none;color:var(--blue-link)}
+.price-box{background:var(--grey);border-left:8px solid var(--red-accent);padding:22px 28px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;color:var(--black)}
+.price-box .amt{font-size:clamp(44px,4.17vw,64px);line-height:1}
+.price-box .note{font-size:14px;line-height:1.3;letter-spacing:.5px}
+.price-box .note span{display:block}
+.color-head{font-family:var(--f-btn);font-size:20px;font-weight:600;color:var(--black)}
+.color-head span{font-weight:500;color:var(--body)}
+.swatches{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.swatches a{width:48px;height:48px;border-radius:50%;border:1px solid var(--body);display:block;overflow:hidden}
+.swatches a[aria-current="true"]{outline:2px solid var(--black);outline-offset:3px}
+.swatches img{width:100%;height:100%;object-fit:cover}
+.trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.trust > div{background:var(--grey);padding:14px;display:flex;gap:10px;align-items:flex-start}
+.trust svg{flex-shrink:0}
+.trust h3{font-size:18px;color:var(--black)}
+.trust p{margin-top:2px;font-size:14px}
+.buy-ctas{display:flex;flex-direction:column;gap:12px}
+.buy-ctas .btn{min-height:72px;font-family:var(--f-disp);font-size:28px;letter-spacing:0}
+
+/* ---------- Why buy ---------- */
+.why{border-top:8px solid var(--grey)}
+.why .container{padding-block:72px 88px;display:flex;flex-direction:column;gap:36px}
+.why-title{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;letter-spacing:3px;color:var(--body);text-align:center}
+.why-title::before,.why-title::after{content:"";flex:1;height:1px;background:var(--body)}
+.why-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.why-card{background:var(--grey);padding:28px 26px;display:flex;flex-direction:column;gap:12px}
+.why-card.green{border-left:5px solid var(--green-deco)} .why-card.blue{border-left:5px solid var(--blue-deco)}
+.why-card h3{font-size:24px;line-height:1.1;color:var(--black)}
+.why-card p{font-size:15px;line-height:1.65}
+.why-card a{font-weight:700;color:var(--blue-link)}
+
+/* ---------- Accordion ---------- */
+.details{border-top:8px solid var(--grey)}
+.details .container{max-width:1040px;padding-block:56px 88px}
+.acc{border-bottom:1px solid var(--grey)}
+.acc summary{list-style:none;cursor:pointer;min-height:44px;padding:26px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:20px;font-weight:700;color:var(--black)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font-size:26px;font-weight:400;color:var(--body);line-height:1}
+.acc[open] summary{color:var(--blue-link)}
+.acc[open] summary::after{content:"×"}
+.acc-body{padding:0 0 32px;font-size:17px;line-height:1.7}
+.acc-body p{max-width:760px}
+.specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 40px;margin:0}
+.specs dt{margin:0 0 6px;font-size:14px;letter-spacing:2px;color:var(--body)}
+.specs dd{margin:0;font-size:17px;font-weight:600;color:var(--black)}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;line-height:1.5}
+.checks li{display:flex;gap:14px}
+.checks li::before{content:"✓";color:var(--blue-link);font-weight:700}
+
+/* ---------- Promo banner ---------- */
+.promo-banner{position:relative;background:var(--black);min-height:clamp(520px,41.7vw,760px);overflow:hidden;display:flex;align-items:center}
+.promo-banner > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 50%}
+.promo-banner::before{content:"";position:absolute;inset:0;background:rgba(3,3,3,.45)}
+.promo-copy{position:relative;margin-left:50%;width:50%;padding:48px clamp(24px,6.7vw,120px) 48px 24px;display:flex;flex-direction:column;gap:22px;color:var(--off)}
+.promo-copy .eyebrow{color:var(--off)}
+.promo-copy h2{font-size:clamp(40px,4.45vw,80px);line-height:.95}
+.promo-copy h2 span{display:block}
+.promo-copy h2 .free{align-self:flex-start;display:inline-block;background:var(--red);padding:2px 14px 0}
+.promo-copy p{font-size:18px;line-height:1.6;font-weight:600}
+.promo-ctas{display:flex;flex-wrap:wrap;gap:26px}
+.promo-ctas .btn{font-size:14px;text-transform:uppercase}
+.promo-ctas .btn-red{width:160px} .promo-ctas .btn-blue{width:195px}
+
+/* ---------- Reviews ---------- */
+.reviews .container{padding-block:96px;display:flex;flex-direction:column;gap:48px}
+.rev-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px}
+.rev-head .eyebrow{color:var(--red-accent)}
+.rev-title{display:flex;flex-direction:column;gap:16px}
+.rev-title h2{font-size:clamp(40px,4.17vw,68px);line-height:1;color:var(--black)}
+.rev-title h2 span{display:block}
+.rev-score{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.rev-score .num{font-size:clamp(72px,7.2vw,112px);line-height:.9;color:var(--black)}
+.rev-score .stars{color:var(--gold);font-size:24px;letter-spacing:3px}
+.rev-score .lbl{font-size:14px;letter-spacing:1px}
+.dist{max-width:720px;display:flex;flex-direction:column;gap:12px;list-style:none;margin:0;padding:0}
+.dist li{display:grid;grid-template-columns:36px minmax(0,1fr) 48px;align-items:center;gap:14px;font-size:14px}
+.dist .track{height:10px;background:var(--grey)}
+.dist .fill{display:block;height:100%;background:var(--body)}
+.dist li:nth-child(1) .fill{background:var(--red)} .dist li:nth-child(2) .fill{background:var(--blue)}
+.dist .pct{text-align:right}
+.rev-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.rev-card{border:1px solid var(--body);border-top:5px solid var(--red);padding:26px 24px;display:flex;flex-direction:column;gap:10px}
+.rev-card.blue{border-top-color:var(--blue-deco)}
+.rev-card .who{font-size:16px;font-weight:700;color:var(--black)}
+.rev-card .who span{color:var(--blue-link)}
+.rev-card .date{font-size:14px}
+.rev-card .stars{color:var(--gold);font-size:18px;letter-spacing:2px}
+.rev-card .text{font-size:15px;line-height:1.65}
+.view-more{align-self:center;min-height:56px;padding:18px 56px;font-size:17px;letter-spacing:1px}
+
+/* ---------- Footer ---------- */
+.site-footer{border-top:1px solid var(--grey)}
+.site-footer .container{padding-block:80px 40px;display:flex;flex-direction:column;gap:56px}
+.ft-cols{display:flex;flex-wrap:wrap;gap:48px 64px}
+.ft-brand{flex:2 1 320px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.ft-brand img{height:64px;width:auto;align-self:flex-start}
+.ft-brand p{font-size:15px;line-height:1.7;max-width:360px}
+.ft-nav{flex:1 1 160px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.ft-nav h2{margin-bottom:4px;font-size:14px;font-weight:700;letter-spacing:1px;color:var(--black)}
+.ft-nav a{font-size:15px;color:var(--body);text-decoration:none;padding:2px 0}
+.ft-nav a:hover{color:var(--red)}
+.ft-bottom{border-top:1px solid var(--grey);padding-top:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;line-height:1.7}
+.ft-bottom .since{font-weight:700;letter-spacing:2px}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1199px){
+  .why-grid,.rev-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pdp-main .container{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+}
+@media (max-width:1023px){
+  .hdr-top{grid-template-columns:auto minmax(0,1fr) auto auto;gap:8px}
+  .menu-btn{display:flex;order:-1}
+  .hdr-badge{justify-self:end}
+  .hdr-actions .search-toggle,.hdr-cta{display:none}
+  .hdr-nav,.search-bar{display:none !important}
+  .mobile-panel.open{display:block;border-top:1px solid var(--grey);padding:8px clamp(16px,3.6vw,52px) 24px}
+  .mobile-panel ul{list-style:none;margin:0;padding:0}
+  .mobile-panel li a{display:flex;align-items:center;min-height:52px;border-bottom:1px solid var(--grey);font-family:var(--f-btn);font-weight:500;font-size:16px;letter-spacing:1.5px;color:var(--black);text-decoration:none}
+  .mobile-panel form{display:flex;gap:8px;margin-top:16px}
+  .mobile-panel input{flex:1;min-width:0;min-height:48px;border:2px solid var(--black);padding:0 12px;font:16px var(--f-body)}
+  .mobile-panel .btn{min-height:48px;padding:0 18px;font-size:15px}
+  .mobile-panel .panel-cta{margin-top:16px;width:100%;min-height:52px;font-size:16px;letter-spacing:1px}
+
+  .pdp-main .container{grid-template-columns:1fr;gap:40px;padding-top:32px}
+  .gallery{position:static;max-width:640px;width:100%;margin-inline:auto}
+  .promo-banner{align-items:flex-end}
+  .promo-banner::before{background:linear-gradient(to bottom,rgba(3,3,3,.35),rgba(3,3,3,.75))}
+  .promo-copy{margin-left:0;width:100%;max-width:640px;padding:48px var(--gutter)}
+  .rev-score{align-items:flex-start}
+}
+@media (max-width:767px){
+  .hdr-badge{height:30px}
+  .hdr-logo img{height:52px}
+  .price-bar .container{padding-block:10px;gap:8px 16px}
+  .pb-name{font-size:24px}
+  .pb-price .amt{font-size:28px}
+  .pb-price .note{display:none}
+  .price-bar .btn{min-height:44px;padding:0 18px;font-size:15px}
+  .notice p{font-size:15px}
+  .g-thumbs{gap:8px}
+  .price-box{padding:18px 20px}
+  .swatches{gap:10px}
+  .swatches a{width:44px;height:44px}
+  .trust{grid-template-columns:1fr}
+  .buy-ctas .btn{min-height:60px;font-size:24px}
+  .why .container{padding-block:56px 64px}
+  .why-grid,.rev-grid{grid-template-columns:1fr}
+  .why-title{letter-spacing:2px}
+  .details .container{padding-block:32px 56px}
+  .acc summary{font-size:18px;padding:22px 0}
+  .acc-body{font-size:16px}
+  .specs{grid-template-columns:1fr 1fr;gap:20px 24px}
+  .promo-banner{display:block;min-height:0}
+  .promo-banner::before{display:none}
+  .promo-banner > img{position:static;aspect-ratio:16/10;height:auto;object-position:25% 50%}
+  .promo-copy{padding:36px var(--gutter) 44px}
+  .promo-copy p{font-size:16px}
+  .promo-ctas{gap:12px}
+  .promo-ctas .btn{flex:1 1 140px;width:auto}
+  .reviews .container{padding-block:64px}
+  .view-more{width:100%;padding-inline:16px}
+  .ft-cols{display:grid;grid-template-columns:1fr 1fr}
+  .ft-brand{grid-column:1/-1}
+}
+@media (max-width:420px){
+  .pb-name{display:none}
+  .specs{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+</head>
+<body>
+
+<a class="sr-only skip" href="#main">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="hdr-top">
+    <button type="button" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a href="index.html" class="hdr-logo" aria-label="uLace home"><img src="assets/ulace-logo.png" alt="uLace No-Tie Laces" width="248" height="124"></a>
+    <img class="hdr-badge" src="assets/shark-tank-callout.png" alt="As Seen On Season 5 Shark Tank" width="185" height="66">
+    <div class="hdr-actions">
+      <button type="button" class="icon-btn search-toggle" aria-label="Search" aria-expanded="false" aria-controls="search-bar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+      <a href="#" class="icon-btn" aria-label="Cart">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+      </a>
+      <a href="#" class="btn btn-red hdr-cta"><span>FIND YOUR</span><span>uLace FIT</span></a>
+    </div>
+  </div>
+  <nav class="hdr-nav" aria-label="Main">
+    <ul>
+      <li><a href="#">SHOP <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a></li>
+      <li><a href="#">FIND YOUR SIZE</a></li>
+      <li><a href="#">SHOP ACCESSORIES <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a></li>
+      <li><a href="index.html#main">OUR STORY</a></li>
+      <li><a href="#">PROFORMANCE</a></li>
+    </ul>
+  </nav>
+  <div class="search-bar" id="search-bar">
+    <form role="search" onsubmit="return false"><label class="sr-only" for="q">Search uLace</label><input id="q" type="search" placeholder="Search laces, colors, sizes…"><button class="btn btn-red" type="submit">SEARCH</button></form>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">FIND YOUR SIZE</a></li>
+        <li><a href="#">SHOP ACCESSORIES</a></li>
+        <li><a href="#">OUR STORY</a></li>
+        <li><a href="#">PROFORMANCE</a></li>
+      </ul>
+    </nav>
+    <form role="search" onsubmit="return false"><label class="sr-only" for="q-m">Search uLace</label><input id="q-m" type="search" placeholder="Search…"><button class="btn btn-red" type="submit">SEARCH</button></form>
+    <a href="#" class="btn btn-red panel-cta">FIND YOUR uLace FIT</a>
+  </div>
+</header>
+
+<!-- STICKY PRICE / ADD TO CART BAR -->
+<div class="price-bar">
+  <div class="container">
+    <p class="cond pb-name">uLace CLASSIC</p>
+    <div class="pb-price">
+      <p class="cond amt">$6.49 / Pack</p>
+      <p class="note"><span>Special pricing</span><span>the more pairs</span><span>you lace.</span></p>
+    </div>
+    <a href="#" class="btn btn-red">ADD TO CART</a>
+  </div>
+</div>
+
+<!-- MIX OR MATCH NOTICE -->
+<div class="notice"><p>These are Mix or Match packs, designed for color flexibility. 2 packs are needed to lace a pair of sneakers.</p></div>
+
+<main id="main">
+
+<!-- GALLERY + BUY BOX -->
+<section class="pdp-main" aria-label="Product">
+  <div class="container">
+    <div class="gallery">
+      <div class="g-main"><img id="g-main-img" src="assets/pdp/classic-black-1.webp" alt="uLace Classic - Black laced into a white leather sneaker" width="900" height="900" fetchpriority="high"></div>
+      <div class="g-thumbs" role="group" aria-label="Product images">
+        <button type="button" aria-current="true" aria-label="Show image 1 of 5" data-src="assets/pdp/classic-black-1.webp" data-alt="uLace Classic - Black laced into a white leather sneaker"><img src="assets/pdp/classic-black-1.webp" alt="" width="900" height="900"></button>
+        <button type="button" aria-current="false" aria-label="Show image 2 of 5" data-src="assets/pdp/classic-black-2.webp" data-alt="The uLace Promise: life without shoelace hassle"><img src="assets/pdp/classic-black-2.webp" alt="" width="900" height="900" loading="lazy"></button>
+        <button type="button" aria-current="false" aria-label="Show image 3 of 5" data-src="assets/pdp/classic-black-3.webp" data-alt="uLace Classic pack: turns lace-ups into slip-ons, quick and easy, hassle-free"><img src="assets/pdp/classic-black-3.webp" alt="" width="900" height="900" loading="lazy"></button>
+        <button type="button" aria-current="false" aria-label="Show image 4 of 5" data-src="assets/pdp/classic-black-4.webp" data-alt="30 day risk-free trial, shipping offer and fast shipping from the USA warehouse"><img src="assets/pdp/classic-black-4.webp" alt="" width="900" height="900" loading="lazy"></button>
+        <button type="button" aria-current="false" aria-label="Show image 5 of 5" data-src="assets/pdp/classic-black-5.webp" data-alt="A man wearing sneakers laced with uLace on a city street"><img src="assets/pdp/classic-black-5.webp" alt="" width="900" height="900" loading="lazy"></button>
+      </div>
+    </div>
+
+    <div class="buy">
+      <div class="buy-head">
+        <p class="kicker">THE ORIGINAL NO-TIE SNEAKER CONVERSION SYSTEM™</p>
+        <h1 class="cond">uLace CLASSIC</h1>
+        <p class="tag">Converts WIDE Eyelet-Span sneakers into a perfect slip-on, quickly, easily and permanently.</p>
+      </div>
+
+      <div class="rating-row">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span><strong>4.9</strong><span class="sr-only"> out of 5</span></span>
+        <span aria-hidden="true">|</span>
+        <a href="#reviews">5,064 reviews</a>
+        <span aria-hidden="true">|</span>
+        <span>500,000+ sold</span>
+      </div>
+
+      <div class="price-box">
+        <p class="cond amt">$6.49 / Pack</p>
+        <p class="note"><span>SPECIAL PRICING</span><span>THE MORE PACKS</span><span>YOU BUY.</span></p>
+      </div>
+
+      <div>
+        <p class="color-head" id="color-label">COLOR <span>— Black</span></p>
+        <ul class="swatches" aria-labelledby="color-label">
+          <li><a href="#" title="Black" aria-label="Black (selected)" aria-current="true" style="background:#000000"></a></li>
+          <li><a href="#" title="White" aria-label="White" style="background:#FFFFFF"></a></li>
+          <li><a href="#" title="Rainbow" aria-label="Rainbow"><img src="assets/swatches/rainbow.webp" alt="" width="64" height="64"></a></li>
+          <li><a href="#" title="Canvas / Off-White" aria-label="Canvas / Off-White" style="background:#FAFAF6"></a></li>
+          <li><a href="#" title="Scarlet Red" aria-label="Scarlet Red" style="background:#FF0000"></a></li>
+          <li><a href="#" title="Light Grey" aria-label="Light Grey" style="background:#B0B0B0"></a></li>
+          <li><a href="#" title="Pretty In Pinks" aria-label="Pretty In Pinks"><img src="assets/swatches/pretty-in-pinks.webp" alt="" width="64" height="64"></a></li>
+          <li><a href="#" title="Light Navy Blue" aria-label="Light Navy Blue" style="background:#112154"></a></li>
+          <li><a href="#" title="Graydient" aria-label="Graydient"><img src="assets/swatches/graydient.webp" alt="" width="64" height="64"></a></li>
+          <li><a href="#" title="Medium Grey" aria-label="Medium Grey" style="background:#757575"></a></li>
+          <li><a href="#" title="Metallic Silver" aria-label="Metallic Silver"><img src="assets/swatches/metallic-silver.webp" alt="" width="64" height="64"></a></li>
+          <li><a href="#" title="Ice" aria-label="Ice"><img src="assets/swatches/ice.webp" alt="" width="64" height="64"></a></li>
+          <li><a href="#" title="Tan" aria-label="Tan" style="background:#F5E1BC"></a></li>
+          <li><a href="#" title="Brown" aria-label="Brown" style="background:#571200"></a></li>
+          <li><a href="#" title="Dark Navy Blue" aria-label="Dark Navy Blue" style="background:#050036"></a></li>
+          <li><a href="#" title="Bright Blue" aria-label="Bright Blue" style="background:#1931B3"></a></li>
+        </ul>
+      </div>
+
+      <div class="trust">
+        <div>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E50505" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div><h3 class="cond">30-Day Guarantee</h3><p>Wrong size? We'll fix it.</p></div>
+        </div>
+        <div>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#525050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+          <div><h3 class="cond">Fast Shipping</h3><p>Ships within 1-2 days.</p></div>
+        </div>
+        <div>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E9AF7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14l-4-4 4-4"/><path d="M5 10h10a4 4 0 0 1 0 8h-3"/></svg>
+          <div><h3 class="cond">Free Returns</h3><p>No hassle, no questions.</p></div>
+        </div>
+      </div>
+
+      <div class="buy-ctas">
+        <a href="#" class="btn btn-red">ADD TO CART</a>
+        <a href="#" class="btn btn-black">BUY NOW</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BUY WITH CONFIDENCE -->
+<section class="why" aria-labelledby="why-title">
+  <div class="container">
+    <h2 id="why-title" class="why-title">WHY BUY WITH CONFIDENCE</h2>
+    <div class="why-grid">
+      <article class="why-card green">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E50505" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>
+        <h3 class="cond">Sizing Guarantee — We'll Get It Right</h3>
+        <p>If the size isn't right, contact us within 30 days and we'll send the correct size at no charge. No return shipping needed.</p>
+      </article>
+      <article class="why-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#525050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0V4z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4"/><path d="M12 13v4M9 21h6M10 17h4v4h-4z"/></svg>
+        <h3 class="cond">The Original Since 2009 — Not a Knockoff</h3>
+        <p>uLace invented this category. Our woven textile construction and 4 precision sizes are things cheap silicone imitations can never replicate. <a href="#">See why we're different →</a></p>
+      </article>
+      <article class="why-card blue">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2E9AF7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+        <h3 class="cond">Install in Under 10 Minutes</h3>
+        <p>Simple push/pull through your eyelets — exactly like standard lacing. If you can tie a shoe, you can install uLace. <a href="#">Watch the 60-second install video →</a></p>
+      </article>
+      <article class="why-card">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#525050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.5-4.5L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.5 4.5L20 16"/><path d="M20 20v-4h-4"/></svg>
+        <h3 class="cond">97% of Customers Reorder</h3>
+        <p>Once you go uLace, you convert every pair. That's why 97% of first-time buyers come back to lace more shoes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT DETAILS ACCORDION -->
+<section class="details" aria-label="Product details">
+  <div class="container">
+    <details class="acc" name="pdp-info" open>
+      <summary>Product Details &amp; Specs</summary>
+      <div class="acc-body">
+        <dl class="specs">
+          <div><dt>CONSTRUCTION</dt><dd>Woven yarn-dyed polyester + lycra</dd></div>
+          <div><dt>TECHNOLOGY</dt><dd>Patented Laced-Feel™</dd></div>
+          <div><dt>INSTALL METHOD</dt><dd>Push/Pull through eyelets</dd></div>
+          <div><dt>COMPATIBLE WITH</dt><dd>Eyelets only (not loops or hooks)</dd></div>
+          <div><dt>PACKS PER PAIR</dt><dd>2 packs (most sneakers)</dd></div>
+          <div><dt>COLORS AVAILABLE</dt><dd>80+</dd></div>
+        </dl>
+      </div>
+    </details>
+    <details class="acc" name="pdp-info">
+      <summary>Why uLace vs. Knockoffs</summary>
+      <div class="acc-body">
+        <ul class="checks">
+          <li>4 precision sizes engineered from measuring thousands of sneakers — not one-size-fits-all</li>
+          <li>True woven textile construction — not cheap silicone or plastic</li>
+          <li>Patented Laced-Feel™ technology gives a snug fit that elastic cords can't match</li>
+          <li>Original category creator since 2009 — Shark Tank featured</li>
+          <li>Backed by 30-day guarantee and 97% reorder rate</li>
+        </ul>
+      </div>
+    </details>
+    <details class="acc" name="pdp-info">
+      <summary>Shipping &amp; Returns</summary>
+      <div class="acc-body"><p>Ships within 1–2 business days. Standard delivery 3–7 days. 30-day satisfaction guarantee — if your size isn't right, we'll send the correct one at no charge. Free returns on all orders.</p></div>
+    </details>
+    <details class="acc" name="pdp-info">
+      <summary>How to Install (60 Seconds)</summary>
+      <div class="acc-body"><p>Remove your current laces. Thread each uLace segment through two adjacent eyelets using the simple push/pull method — just like standard lacing but with individual segments. Work your way up the shoe. Done. Your sneakers are now permanent slip-ons.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<section class="promo-banner" aria-labelledby="promo-title">
+  <img src="assets/promo-stairs.webp" alt="A person in jeans and white sneakers walking down concrete steps" width="1600" height="667" loading="lazy">
+  <div class="promo-copy">
+    <p class="eyebrow">LACE ONCE. SLIP ON. GO, GO, GO!</p>
+    <h2 id="promo-title" class="disp"><span>BUY 6 PACKS,</span><span>GET 2 MORE</span><span class="free">FREE.</span></h2>
+    <p>Valid on uLace Classic, Kiddos &amp; Slims — mix and match any colors.</p>
+    <div class="promo-ctas">
+      <a href="#" class="btn btn-red">Shop now</a>
+      <button type="button" class="btn btn-blue" id="copy-code" data-code="GET2">Use code GET2</button>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMER REVIEWS -->
+<section class="reviews" id="reviews" aria-labelledby="rev-title">
+  <div class="container">
+    <div class="rev-head">
+      <div class="rev-title">
+        <p class="eyebrow">CUSTOMER REVIEWS</p>
+        <h2 id="rev-title" class="cond"><span>WHAT PEOPLE ARE</span><span style="color:var(--blue-text)">SAYING.</span></h2>
+      </div>
+      <div class="rev-score">
+        <span class="cond num">4.9</span>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span class="lbl">5,064 VERIFIED REVIEWS</span>
+      </div>
+    </div>
+
+    <ul class="dist" aria-label="Rating distribution">
+      <li><span>5★</span><span class="track"><span class="fill" style="width:76%"></span></span><span class="pct">76%</span></li>
+      <li><span>4★</span><span class="track"><span class="fill" style="width:15%"></span></span><span class="pct">15%</span></li>
+      <li><span>3★</span><span class="track"><span class="fill" style="width:6%"></span></span><span class="pct">6%</span></li>
+      <li><span>2★</span><span class="track"><span class="fill" style="width:2%"></span></span><span class="pct">2%</span></li>
+      <li><span>1★</span><span class="track"><span class="fill" style="width:1%"></span></span><span class="pct">1%</span></li>
+    </ul>
+
+    <div class="rev-grid">
+      <article class="rev-card">
+        <p class="who">Keith C. <span aria-label="Verified buyer">✓</span></p>
+        <p class="date">24/11/2025</p>
+        <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <p class="text">After the initial effort of installing the laces, the shoes kept a nice fit and was able to achieve a clean look.</p>
+      </article>
+      <article class="rev-card blue">
+        <p class="who">Deanne G. <span aria-label="Verified buyer">✓</span></p>
+        <p class="date">27/07/2025</p>
+        <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <p class="text">Got tired of my shoelaces becoming untied in the most inconvenient places like the middle of the parking lot. My dog also enjoyed chewing on the end of my laces. uLace solved the problem. No more having to stop and tie my shoes and no more dog chewing on the end of the laces. I enjoy the convenience of now being able to slip on my shoes.</p>
+      </article>
+      <article class="rev-card">
+        <p class="who">Jonas J. <span aria-label="Verified buyer">✓</span></p>
+        <p class="date">14/07/2025</p>
+        <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <p class="text">uLace simplified my shoelace routine by eliminating the need for tying, providing a secure fit and easy adjustments.</p>
+      </article>
+      <article class="rev-card">
+        <p class="who">Olga H. <span aria-label="Verified buyer">✓</span></p>
+        <p class="date">28/04/2025</p>
+        <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <p class="text">I alternated the white with the tan U-laces. It has made putting on my shoes very easy and quick. Truly like them!</p>
+      </article>
+    </div>
+
+    <a href="#" class="btn btn-blue view-more">VIEW MORE</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="ft-cols">
+      <div class="ft-brand">
+        <img src="assets/ulace-logo.png" alt="uLace No-Tie Laces" width="248" height="124" loading="lazy">
+        <p>The Original No-Tie Sneaker Conversion System. Converting sneakers and simplifying lives since 2008. As seen on Shark Tank.</p>
+      </div>
+      <nav class="ft-nav" aria-labelledby="ft-shop"><h2 id="ft-shop">SHOP</h2>
+        <a href="classic-black.html">uLace Classic</a><a href="#">uLace Kiddos</a><a href="#">uLace Slims</a><a href="#">uLace Shorts</a><a href="#">uLace ProFormance</a><a href="#">All Colors</a>
+      </nav>
+      <nav class="ft-nav" aria-labelledby="ft-help"><h2 id="ft-help">HELP</h2>
+        <a href="#">Find Your Fit</a><a href="index.html#how-it-works">How It Works</a><a href="#">FAQ's</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact US</a>
+      </nav>
+      <nav class="ft-nav" aria-labelledby="ft-co"><h2 id="ft-co">COMPANY</h2>
+        <a href="#">Our Story</a><a href="#">Shark Tank</a><a href="#">Press</a><a href="#">Wholesale</a><a href="#">Affiliates</a>
+      </nav>
+    </div>
+    <div class="ft-bottom">
+      <p>Copyright 2026 uLace, LLC · All rights reserved · The Original Sneaker Conversion System</p>
+      <p class="since">SINCE 2009</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* Mobile menu + search */
+  var menuBtn=document.querySelector('.menu-btn'), panel=document.getElementById('mobile-panel');
+  menuBtn.addEventListener('click',function(){
+    var open=panel.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open);
+    menuBtn.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });
+  var sBtn=document.querySelector('.search-toggle'), sBar=document.getElementById('search-bar');
+  sBtn.addEventListener('click',function(){
+    var open=sBar.classList.toggle('open');
+    sBtn.setAttribute('aria-expanded',open);
+    if(open) document.getElementById('q').focus();
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){panel.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');sBar.classList.remove('open');sBtn.setAttribute('aria-expanded','false');}
+  });
+
+  /* Gallery */
+  var main=document.getElementById('g-main-img');
+  var thumbs=document.querySelectorAll('.g-thumbs button');
+  thumbs.forEach(function(b){
+    b.addEventListener('click',function(){
+      main.src=b.dataset.src; main.alt=b.dataset.alt;
+      thumbs.forEach(function(t){t.setAttribute('aria-current','false');});
+      b.setAttribute('aria-current','true');
+    });
+  });
+
+  /* Accordion: keep one open (fallback for browsers without <details name>) */
+  var accs=document.querySelectorAll('.acc');
+  accs.forEach(function(d){
+    d.addEventListener('toggle',function(){
+      if(d.open) accs.forEach(function(o){ if(o!==d) o.open=false; });
+    });
+  });
+
+  /* Copy promo code */
+  var cc=document.getElementById('copy-code');
+  cc.addEventListener('click',function(){
+    var code=cc.dataset.code, label=cc.textContent;
+    if(navigator.clipboard){navigator.clipboard.writeText(code).then(function(){cc.textContent='Code copied!';setTimeout(function(){cc.textContent=label;},2000);});}
+  });
+})();
+</script>
+</body>
+</html>
